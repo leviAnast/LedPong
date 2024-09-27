@@ -15,8 +15,6 @@ unsigned long fastInterval = 250UL; // Intervalo para velocidade aumentada
 unsigned long originalInterval = 500UL; // Guardar o intervalo original para restaurar depois
 int dir = 1; // Direção inicial
 int pos = 4; // Posição inicial da bola
-int A = 0;
-int B = 0;
 
 void setup() {
   // Criação dos Processos
@@ -145,12 +143,11 @@ void sound(){
   noTone(buzzer);
 }
 
-void resetGame() {
+void resetGame() {// Restaura as configuracoes iniciais
   digitalWrite(LED[pos], LOW);
   pos = 4;
   dir = 1;
-  interval = originalInterval; // Restaura o intervalo original
+  interval = originalInterval; 
   digitalWrite(LED[pos], HIGH);
 }
 
-void loop() {}
