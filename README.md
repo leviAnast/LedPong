@@ -32,11 +32,4 @@ Este projeto implementa um kernel de processos simples para um jogo interativo u
 - **Botões**: Pinos digitais 3 e 4.
 - **Buzzer**: Pino digital 16 (ou outro pino digital disponível).
 
-## Como Configurar
 
-### Passo 1: Instalação do Código
-
-1. **Clone o repositório**:
-   ```bash
-   git clone https://github.com/seu_usuario/seu_projeto.git
-   cd seu_projeto
